@@ -22,7 +22,8 @@ class Triangle
   def illegal
     if (@one <= 0) || (@two <= 0) || (@three <= 0)
         raise TriangleError
-    #elsif (@one )
+    elsif (@one + @two >= @three)
+        raise TriangleError
     end
   end
   
